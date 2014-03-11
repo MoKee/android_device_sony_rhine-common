@@ -18,7 +18,7 @@
 import os
 
 TARGET_DIR = os.getenv('OUT')
-TARGET_DEVICE = os.getenv('CM_BUILD')
+TARGET_DEVICE = os.getenv('MK_BUILD')
 
 def FullOTA_InstallEnd(self):
   if TARGET_DEVICE == "honami" or TARGET_DEVICE == "togari":
