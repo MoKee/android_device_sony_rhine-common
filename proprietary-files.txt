@@ -26,7 +26,6 @@ bin/taimport
 bin/time_daemon
 bin/usbhub
 bin/usbhub_init
-bin/wcnss_service
 etc/Bluetooth_cal.acdb
 etc/General_cal.acdb
 etc/Global_cal.acdb
@@ -355,4 +354,4 @@ vendor/lib/libsensor_reg.so
 vendor/lib/libssd.so
 vendor/lib/libsurround_proc.so
 vendor/lib/libthermalclient.so
-obj:vendor/lib/libtime_genoff.so
+-vendor/lib/libtime_genoff.so
