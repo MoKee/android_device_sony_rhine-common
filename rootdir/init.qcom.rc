@@ -169,6 +169,10 @@ on boot
 
     chmod 0444 /sys/devices/platform/msm_hsusb/gadget/usb_state
 
+    # MDP idle notifier
+    chown system graphics /sys/class/graphics/fb0/idle_time
+    chmod 0664 /sys/class/graphics/fb0/idle_time
+
     # Remove write permissions to video related nodes
     chown system graphics /sys/class/graphics/fb1/hpd
     chown system system /sys/class/graphics/fb1/hdcp/tp
@@ -198,6 +202,18 @@ on boot
 
     # For bridgemgr daemon to inform the USB driver of the correct transport
     chown radio radio /sys/class/android_usb/f_rmnet_smd_sdio/transport
+
+    # For setting tcp delayed ack
+    chown system system /sys/kernel/ipv4/tcp_delack_seg
+    chown system system /sys/kernel/ipv4/tcp_use_userconfig
+
+    # Define TCP delayed ack settings for WiFi & LTE
+    setprop net.tcp.delack.default     1
+    setprop net.tcp.delack.wifi        20
+    setprop net.tcp.delack.lte         8
+    setprop net.tcp.usercfg.default    0
+    setprop net.tcp.usercfg.wifi       1
+    setprop net.tcp.usercfg.lte        1
 
     chmod 660 /dev/rtc0
     chown system system /dev/rtc0
