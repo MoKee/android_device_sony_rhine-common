@@ -8,10 +8,6 @@
     "target_path": "device/sony/msm8974-common"
   },
   {
-    "repository": "android_vendor_sony_qcom-common",
-    "target_path": "vendor/sony/qcom-common"
-  },
-  {
     "repository": "android_hardware_qcom_display-caf-new",
     "target_path": "hardware/qcom/display-caf-new"
   },
