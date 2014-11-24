@@ -1,5 +1,5 @@
 # Copyright (C) 2012 The Android Open Source Project
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2014 The MoKee OpenSource Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
 import os
 
 TARGET_DIR = os.getenv('OUT')
-TARGET_DEVICE = os.getenv('CM_BUILD')
+TARGET_DEVICE = os.getenv('MK_BUILD')
 
 def FullOTA_InstallEnd(self):
   if TARGET_DEVICE == "honami" or TARGET_DEVICE == "togari":
