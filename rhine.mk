@@ -58,9 +58,8 @@ PRODUCT_COPY_FILES += \
 
 # Sbin
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/charger:root/charger \
-    $(COMMON_PATH)/rootdir/sbin/wait4tad_static:root/sbin/wait4tad_static \
-    $(COMMON_PATH)/rootdir/sbin/tad_static:root/sbin/tad_static
+    $(COMMON_PATH)/rootdir/charger:root/healthd \
+    $(COMMON_PATH)/rootdir/sbin/tad_static:system/bin/tad_static
 
 # ANT+
 PRODUCT_PACKAGES += \
