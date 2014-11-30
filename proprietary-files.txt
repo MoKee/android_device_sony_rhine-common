@@ -362,6 +362,7 @@ etc/firmware/tzsuntory.mdt
 
 # TA
 bin/taimport
+bin/ta_param_loader
 bin/ta_qmi_service
 lib/libMiscTaAccessor.so
 lib/libmiscta.so
@@ -370,6 +371,9 @@ lib/libta.so
 # Time
 bin/time_daemon
 -vendor/lib/libtime_genoff.so
+
+# Touchscreen
+bin/clearpad_fwloader
 
 # Sensors
 vendor/lib/hw/sensors.msm8974.so
