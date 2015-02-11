@@ -21,6 +21,6 @@ if [ -f z2/c6x02.sh ];then
 	rm z2/c6x02.sh
 fi
 if [ -f z1/c6x02.sh ];then
-	rm z1/c6x02..sh
+	rm z1/c6x02.sh
 fi
 
